@@ -1,0 +1,47 @@
+﻿@model PendientesModel
+
+@{
+    ViewData["Title"] = "Editar Pendientes";
+}
+
+@* <h2>Editar Pendientes</h2> *@
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit">
+    
+    <div class="form-group">
+        <label asp-for="Titulo" class="control-label"></label>
+        <input asp-for="Titulo" class="form-control" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descripcion" class="control-label"></label>
+        <input asp-for="Descripcion" class="form-control" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Fecha_Creacion" class="control-label"></label>
+        <input asp-for="Fecha_Creacion" class="form-control" />
+        <span asp-validation-for="Fecha_Creacion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Fecha_Vencimiento" class="control-label"></label>
+        <input asp-for="Fecha_Vencimiento" class="form-control" />
+        <span asp-validation-for="Fecha_Vencimiento" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Completada" class="control-label"></label>
+        <input asp-for="Completada" type="form-control" />
+        <span asp-validation-for="Completada" class="text-danger"></span>
+    </div>
+
+    <input type="hidden" asp-for="ID" />
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+
+</form>

@@ -1,0 +1,22 @@
+﻿@model PendientesModel
+
+@{
+    ViewData["Title"] = "Eliminar Pendiente";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="DeleteConfirmed" method="post">
+    
+    <div class="form-group">
+        <label>Estas Seguro de Eliminar Pendiente?</label>
+        <p><strong>@Model.Titulo</strong></p>
+    </div>
+
+    <input type="hidden" asp-for="ID" />
+    
+    <button type="submit" class="btn btn-danger">Delete</button>
+
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+
+</form>

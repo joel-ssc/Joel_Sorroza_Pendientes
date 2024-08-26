@@ -1,0 +1,43 @@
+﻿
+@model IEnumerable<PendientesModel> 
+
+@{
+    ViewData["Title"] = "Pendientes";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevos Pendientes</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Fecha_Creacion</th>
+            <th>Fecha_Vencimiento</th>
+            <th>Completada</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pendiente in Model)
+        {
+            <tr>
+                <td>@pendiente.ID</td>
+                <td>@pendiente.Titulo</td>
+                <td>@pendiente.Descripcion</td>
+                <td>@pendiente.Fecha_Creacion</td>
+                <td>@pendiente.Fecha_Vencimiento</td>
+                <td>@pendiente.Completada</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@pendiente.ID" class="btn btn-secondary">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@pendiente.ID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

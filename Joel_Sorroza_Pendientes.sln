@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joel_Sorroza_Pendientes", "Joel_Sorroza_Pendientes\Joel_Sorroza_Pendientes.csproj", "{234C5927-3C8D-4B5C-AB2F-50460B4CB4B9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pendientes_Api", "Pendientes_Api\Pendientes_Api.csproj", "{540204C7-E718-4FDB-A27D-7AA3CC6B206E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pendientes", "Pendientes\Pendientes.csproj", "{BD5F6D33-A09E-429C-A4D1-91DD3AB6F792}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{234C5927-3C8D-4B5C-AB2F-50460B4CB4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{234C5927-3C8D-4B5C-AB2F-50460B4CB4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{234C5927-3C8D-4B5C-AB2F-50460B4CB4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{234C5927-3C8D-4B5C-AB2F-50460B4CB4B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{540204C7-E718-4FDB-A27D-7AA3CC6B206E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{540204C7-E718-4FDB-A27D-7AA3CC6B206E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{540204C7-E718-4FDB-A27D-7AA3CC6B206E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{540204C7-E718-4FDB-A27D-7AA3CC6B206E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5F6D33-A09E-429C-A4D1-91DD3AB6F792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5F6D33-A09E-429C-A4D1-91DD3AB6F792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5F6D33-A09E-429C-A4D1-91DD3AB6F792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5F6D33-A09E-429C-A4D1-91DD3AB6F792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
